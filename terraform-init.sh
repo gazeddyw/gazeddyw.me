@@ -4,5 +4,5 @@ set -e
 echo "Changing to terraform directory..."
 cd terraform
 
-echo "Performing apply..."
-terraform apply --auto-approve
+echo "Performing init..."
+terraform init
