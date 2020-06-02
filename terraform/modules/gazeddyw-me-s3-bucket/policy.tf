@@ -10,7 +10,7 @@ data "aws_iam_policy_document" "gazeddyw_me_s3_bucket_policy" {
     }
 
     resources = [
-      "arn:aws:s3:::gazeddyw-me-${terraform.workspace}/*"
+      "arn:aws:s3:::${lookup(var.s3_bucket_name, terraform.workspace)}/*"
     ]
   }
 }

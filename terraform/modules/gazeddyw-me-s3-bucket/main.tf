@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "gazeddyw_me" {
-  bucket = "gazeddyw-me-${terraform.workspace}"
+  bucket = lookup(var.s3_bucket_name, terraform.workspace)
   acl    = "public-read"
   policy = data.aws_iam_policy_document.gazeddyw_me_s3_bucket_policy.json
 
