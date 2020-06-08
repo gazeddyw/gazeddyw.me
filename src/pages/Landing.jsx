@@ -11,7 +11,7 @@ const Landing = () => {
           <code>['MILLAGE_WRAITHS_CLUB']</code>
         </p>
         <p>
-          <code>></code>
+          <code>&gt;</code>
         </p>
       </header>
     </div>
